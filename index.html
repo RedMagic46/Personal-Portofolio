@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Meta Tags -->
+  <title>Naufal Muammar | Portfolio & Digital Resume</title>
+  <meta name="description"
+    content="Portofolio personal dan resume digital Naufal Muammar (RedMagic46), mahasiswa Teknik Informatika Universitas Muhammadiyah Malang (UMM) Semester 5. Spesialisasi Frontend, Web Engineering & Mobile Development.">
+  <meta name="keywords"
+    content="Naufal Muammar, RedMagic46, Portofolio, Digital Resume, Web Developer, Teknik Informatika, UMM, Pemrograman Web">
+  <meta name="author" content="Naufal Muammar">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Naufal Muammar | Portfolio & Digital Resume">
+  <meta property="og:description"
+    content="Portofolio Personal & Resume Digital Naufal Muammar - Teknik Informatika UMM Semester 5.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/RedMagic46">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/182197863?v=4">
+
+  <!-- Favicon SVG Inline -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Web Fonts (Plus Jakarta Sans & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- External Stylesheet (Vanilla CSS Murni Tanpa Framework) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand Identity / Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Beranda Naufal Muammar">
+        <span class="logo-icon" aria-hidden="true">NM</span>
+        <span class="logo-text">Naufal<span class="logo-tag">.dev</span></span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+          <li><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls (Theme Toggle & Mobile Menu) -->
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Switcher -->
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Ganti tema warna tampilan"
+          title="Ubah Mode Tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- GitHub Profile Direct Link Button -->
+        <a href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm" aria-label="Kunjungi profil GitHub RedMagic46">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle Button -->
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi utama"
+          aria-expanded="false" aria-controls="navMenu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <!-- Kolom Teks & Informasi Pengantar -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Aktif Belajar & Terbuka Kolaborasi
+            </span>
+            <span class="hero-sub-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Semester 5 Teknik Informatika UMM
+            </span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Halo, Saya <span class="gradient-text">Naufal Muammar</span>
+          </h1>
+
+          <p class="hero-role">
+            <span class="hero-role-accent">Frontend & Fullstack Developer</span>
+            <span>•</span>
+            <span>Software Enthusiast</span>
+          </p>
+
+          <div class="hero-bio">
+            <q class="hero-bio-quote">Building software and occasionally breaking things.</q>
+            <p>
+              Mahasiswa Teknik Informatika di Universitas Muhammadiyah Malang yang berfokus pada pengembangan aplikasi
+              web interaktif, mobile app, dan sistem perangkat lunak yang berorientasi pada pengalaman pengguna serta
+              arsitektur kode yang bersih.
+            </p>
+          </div>
+
+          <!-- Tombol Aksi Cepat (Call To Action) -->
+          <div class="hero-actions">
+            <a href="#proyek" class="btn btn-primary">
+              <span>Jelajahi Proyek</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#kontak" class="btn btn-secondary">
+              <span>Hubungi Saya</span>
+            </a>
+            <a href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>@RedMagic46</span>
+            </a>
+          </div>
+
+          <!-- Highlight Metrik Cepat -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">18+</span>
+              <span class="stat-label">Repositori GitHub</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">Proyek Web Siap Pakai</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Sem. 5</span>
+              <span class="stat-label">Teknik Informatika</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Visual: Avatar & Kartu Profil Digital -->
+        <div class="hero-visual">
+          <div class="avatar-backdrop-glow" aria-hidden="true"></div>
+
+          <!-- Floating Badges Interaktif -->
+          <div class="floating-chip chip-top-left" aria-hidden="true">
+            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Next.js & TypeScript</span>
+          </div>
+
+          <div class="floating-chip chip-bottom-right" aria-hidden="true">
+            <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Frontend & Mobile</span>
+          </div>
+
+          <!-- Kartu Profil -->
+          <article class="profile-card">
+            <figure class="profile-image-wrap">
+              <img src="assets/images/avatar.jpg" alt="Foto Profil Naufal Muammar" class="profile-image" width="180"
+                height="180" loading="eager"
+                onerror="this.onerror=null; this.src='https://avatars.githubusercontent.com/u/182197863?v=4';">
+            </figure>
+            <div class="profile-meta">
+              <span class="profile-handle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                github.com/RedMagic46
+              </span>
+              <h2 class="profile-name">Naufal Muammar</h2>
+              <p class="profile-dept">Universitas Muhammadiyah Malang</p>
+            </div>
+            <div class="profile-card-footer">
+              <span class="status-indicator">
+                <span class="status-dot"></span> Mahasiswa Aktif
+              </span>
+              <span>📍 Malang, ID</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         ABOUT SECTION (TENTANG SAYA)
+         ----------------------------------------------------------------------- -->
+    <section id="tentang" class="section-wrapper about-section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Profil Diri</span>
+          <h2 id="about-title" class="section-title">Mengenal Lebih Dekat</h2>
+          <p class="section-subtitle">Kombinasi antara rasa ingin tahu akademis, dedikasi problem solving, dan passion
+            dalam teknologi perangkat lunak modern.</p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Kolom Narasi Diri -->
+          <article class="about-narrative">
+            <p class="about-lead">
+              Halo! Saya Naufal Muammar, mahasiswa program studi S1 Teknik Informatika di Universitas Muhammadiyah
+              Malang yang saat ini sedang menempuh perkuliahan Semester 5.
+            </p>
+            <p class="about-text">
+              Perjalanan saya dalam dunia rekayasa perangkat lunak dimulai dari ketertarikan mengeksplorasi logika
+              komputasi dan mentransformasikannya menjadi produk nyata yang solutif. Saya terbiasa membangun antarmuka
+              web yang rapi, cepat, dan responsif menggunakan ekosistem TypeScript dan React/Next.js, serta mendalami
+              fondasi backend, database, dan pemrograman mobile.
+            </p>
+            <p class="about-text">
+              Selain fokus perkuliahan, saya aktif mengeksplorasi dan membagikan repositori open-source di GitHub (<a
+                href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer"
+                style="color: var(--secondary); text-decoration: underline;">RedMagic46</a>), mulai dari sistem
+              inventory, pendeteksi kesehatan mental berbasis web, hingga perancangan simulasi grafika komputer.
+            </p>
+
+            <!-- Fokus Bidang Minat -->
+            <div class="about-focus-areas">
+              <div class="focus-box">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <h3 class="focus-title">Web Engineering</h3>
+                <p class="focus-desc">Merancang arsitektur antarmuka modern yang modular, aksesibel, dan berkinerja
+                  tinggi.</p>
+              </div>
+
+              <div class="focus-box">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <h3 class="focus-title">Mobile App Dev</h3>
+                <p class="focus-desc">Eksplorasi pembuatan aplikasi bergerak multiplatform yang responsif dan
+                  terintegrasi.</p>
+              </div>
+
+              <div class="focus-box">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                <h3 class="focus-title">UI/UX Crafting</h3>
+                <p class="focus-desc">Perancangan tata letak visual estetis berbasis Figma dengan prinsip human-computer
+                  interaction.</p>
+              </div>
+
+              <div class="focus-box">
+                <svg class="focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <h3 class="focus-title">Logic & Algorithms</h3>
+                <p class="focus-desc">Penerapan struktur data, Object-Oriented Programming (OOP), serta algoritma
+                  efisien.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aside: Kartu Fakta Singkat & Profil Akademis -->
+          <aside class="glass-card about-facts-card" aria-label="Informasi Ringkas">
+            <h3 class="facts-card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Informasi Personal</span>
+            </h3>
+
+            <dl class="fact-list">
+              <div class="fact-item">
+                <dt class="fact-term">Nama Lengkap</dt>
+                <dd class="fact-desc">Naufal Muammar</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-term">Perguruan Tinggi</dt>
+                <dd class="fact-desc">Universitas Muhammadiyah Malang (UMM)</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-term">Jurusan / Jenjang</dt>
+                <dd class="fact-desc">S1 Teknik Informatika (Informatics Engineering)</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-term">Tingkat Perkuliahan</dt>
+                <dd class="fact-desc">Semester 5 (Angkatan 2024)</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-term">Bahasa Utama</dt>
+                <dd class="fact-desc">Indonesia (Native), English (Working)</dd>
+              </div>
+            </dl>
+
+            <!-- Banner Langsung ke Profil GitHub -->
+            <div class="github-banner">
+              <div class="github-banner-info">
+                <h4>GitHub @RedMagic46</h4>
+                <p>18 Repositori Publik Aktif</p>
+              </div>
+              <a href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm" aria-label="Kunjungi GitHub Naufal Muammar">
+                Kunjungi
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SKILLS & TECH STACK SECTION (KEAHLIAN)
+         ----------------------------------------------------------------------- -->
+    <section id="keahlian" class="section-wrapper skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Kompetensi Teknis</span>
+          <h2 id="skills-title" class="section-title">Keahlian & Teknologi</h2>
+          <p class="section-subtitle">Perangkat lunak, bahasa pemrograman, dan teknologi yang saya kuasai dan
+            aplikasikan dalam berbagai proyek.</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Kategori 1: Frontend Web -->
+          <article class="glass-card skill-category-card">
+            <header class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Development</h3>
+            </header>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">HTML5 & Semantik Web</span>
+                  <span class="skill-badge-level">Advanced (92%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan HTML5">
+                  <div class="progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">CSS3 (Flexbox, Grid, Responsive)</span>
+                  <span class="skill-badge-level">Advanced (88%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan CSS3">
+                  <div class="progress-bar progress-cyan" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">JavaScript (ES6+) & TypeScript</span>
+                  <span class="skill-badge-level">Intermediate (85%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan TypeScript">
+                  <div class="progress-bar progress-green" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">React.js & Next.js Framework</span>
+                  <span class="skill-badge-level">Intermediate (80%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan React Next.js">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-tags-wrap">
+              <span class="tech-pill">DOM Manipulation</span>
+              <span class="tech-pill">Tailwind / Vanilla CSS</span>
+              <span class="tech-pill">RESTful API Fetch</span>
+            </div>
+          </article>
+
+          <!-- Kategori 2: Bahasa Pemrograman & Backend -->
+          <article class="glass-card skill-category-card">
+            <header class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Languages & Systems</h3>
+            </header>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">Java (OOP & PBO Lanjut)</span>
+                  <span class="skill-badge-level">Advanced (86%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan Java">
+                  <div class="progress-bar progress-amber" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">Python (Scripting & Automation)</span>
+                  <span class="skill-badge-level">Intermediate (82%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan Python">
+                  <div class="progress-bar progress-green" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">C++ (Grafika Komputer & Alpro)</span>
+                  <span class="skill-badge-level">Intermediate (78%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan C++">
+                  <div class="progress-bar progress-cyan" style="width: 78%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">SQL & MySQL Database</span>
+                  <span class="skill-badge-level">Intermediate (80%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan MySQL">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-tags-wrap">
+              <span class="tech-pill">Relational DB</span>
+              <span class="tech-pill">Algorithm Complexity</span>
+              <span class="tech-pill">Automated Scripts</span>
+            </div>
+          </article>
+
+          <!-- Kategori 3: Tools & Lingkungan Kerja -->
+          <article class="glass-card skill-category-card">
+            <header class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools & Workflow</h3>
+            </header>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">Git & GitHub Version Control</span>
+                  <span class="skill-badge-level">Proficient (90%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan Git">
+                  <div class="progress-bar progress-cyan" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">Figma UI/UX Prototyping</span>
+                  <span class="skill-badge-level">Intermediate (84%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan Figma">
+                  <div class="progress-bar progress-green" style="width: 84%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">Vercel Deployment & CI/CD</span>
+                  <span class="skill-badge-level">Proficient (88%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan Vercel">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name-wrap">VS Code & Debugging DevTools</span>
+                  <span class="skill-badge-level">Proficient (92%)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Penguasaan VS Code">
+                  <div class="progress-bar progress-amber" style="width: 92%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-tags-wrap">
+              <span class="tech-pill">Branching & PRs</span>
+              <span class="tech-pill">Responsive DevTools</span>
+              <span class="tech-pill">Design Systems</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         PROJECTS SECTION (PORTOFOLIO PROYEK DARI GITHUB)
+         ----------------------------------------------------------------------- -->
+    <section id="proyek" class="section-wrapper projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Karya & Eksplorasi</span>
+          <h2 id="projects-title" class="section-title">Portofolio Proyek GitHub</h2>
+          <p class="section-subtitle">Daftar implementasi nyata yang dikembangkan dan di-deploy, bersumber langsung dari
+            akun GitHub <a href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer"
+              style="color: var(--secondary);">RedMagic46</a>.</p>
+        </header>
+
+        <!-- Filter Tab Kategori Proyek -->
+        <nav class="project-filter-nav" aria-label="Filter kategori proyek">
+          <button type="button" class="filter-btn active" data-filter="all">Semua Proyek (8)</button>
+          <button type="button" class="filter-btn" data-filter="web">Web Application</button>
+          <button type="button" class="filter-btn" data-filter="mobile">Mobile & AI</button>
+          <button type="button" class="filter-btn" data-filter="academic">Tugas & Akademik</button>
+        </nav>
+
+        <!-- Grid Kartu Proyek -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Proyek 1: Verikost -->
+          <article class="glass-card project-card" data-category="web">
+            <div class="project-visual-header project-banner-verikost">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Fullstack Web</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">React / Next.js</span>
+                <span class="tag-badge">Vercel</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://verikost-fy7m.vercel.app" target="_blank" rel="noopener noreferrer">Verikost - Kost
+                  Verification Platform</a>
+              </h3>
+              <p class="project-desc">
+                Platform pencarian, kurasi, dan verifikasi indekos terintegrasi untuk mahasiswa. Mempermudah pencarian
+                tempat tinggal dengan data fasilitas transparan dan visualisasi kamar.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://verikost-fy7m.vercel.app" target="_blank" rel="noopener noreferrer"
+                    class="link-btn link-live" title="Buka Demo Verikost">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/RedMagic46/Verikost" target="_blank" rel="noopener noreferrer"
+                    class="link-btn" title="Lihat Source Code GitHub Verikost">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Source</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Aktif</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 2: MindCare (Mental Health Detection) -->
+          <article class="glass-card project-card" data-category="web mobile">
+            <div class="project-visual-header project-banner-mindcare">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Health & AI</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">Web Intelligence</span>
+                <span class="tag-badge">mindcare.my.id</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://mindcare.my.id" target="_blank" rel="noopener noreferrer">MindCare - Mental Health
+                  Detection</a>
+              </h3>
+              <p class="project-desc">
+                Aplikasi skrining dan deteksi kesehatan mental berbasis website. Membantu pengguna melakukan evaluasi
+                diri dini dengan kuesioner cerdas dan rekomendasi solutif.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://mindcare.my.id" target="_blank" rel="noopener noreferrer" class="link-btn link-live"
+                    title="Buka Website MindCare">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>mindcare.my.id</span>
+                  </a>
+                  <a href="https://github.com/RedMagic46/mental-health-detection" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" title="Source Code MindCare">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Source</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Live Domain</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 3: Lapak Jas Merah -->
+          <article class="glass-card project-card" data-category="web">
+            <div class="project-visual-header project-banner-lapak">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">E-Commerce</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">Next.js</span>
+                <span class="tag-badge">UMKM Catalog</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://lapak-jas-merah-8hyu.vercel.app/" target="_blank" rel="noopener noreferrer">Lapak Jas
+                  Merah - Marketplace UMM</a>
+              </h3>
+              <p class="project-desc">
+                Portal katalog produk UMKM dan aksesoris/atribut khas mahasiswa Jas Merah Universitas Muhammadiyah
+                Malang dengan katalog produk interaktif.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://lapak-jas-merah-8hyu.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="link-btn link-live" title="Buka Demo Lapak Jas Merah">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/RedMagic46/lapak-jas-merah" target="_blank" rel="noopener noreferrer"
+                    class="link-btn" title="Source Code Lapak Jas Merah">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Source</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Vercel</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 4: Jadwal Kuliah (IMKB) -->
+          <article class="glass-card project-card" data-category="web academic">
+            <div class="project-visual-header project-banner-jadwal">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Productivity</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">Schedule Manager</span>
+                <span class="tag-badge">IMKB</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://jadwal-kuliah-self.vercel.app" target="_blank" rel="noopener noreferrer">Jadwal Kuliah
+                  Pintar - Interaksi Manusia & Komputer</a>
+              </h3>
+              <p class="project-desc">
+                Sistem pengelolaan dan visualisasi timeline jadwal kuliah interaktif untuk mahasiswa. Dirancang dengan
+                prinsip UX/UI mata kuliah Interaksi Manusia & Komputer.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://jadwal-kuliah-self.vercel.app" target="_blank" rel="noopener noreferrer"
+                    class="link-btn link-live" title="Buka Aplikasi Jadwal Kuliah">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/RedMagic46/IMKB_Tugas8_Kelompok-02" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" title="Source Code IMKB">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Source</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Vercel</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 5: Project UAS Algoritma & Pemrograman -->
+          <article class="glass-card project-card" data-category="web academic">
+            <div class="project-visual-header project-banner-alpro">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Algorithms</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">Algorithm Visualizer</span>
+                <span class="tag-badge">UAS Alpro</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://project-uas-algoritma-pemrograman.vercel.app" target="_blank"
+                  rel="noopener noreferrer">Visualisasi Algoritma & Pemrograman</a>
+              </h3>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://project-uas-algoritma-pemrograman.vercel.app" target="_blank"
+                    rel="noopener noreferrer" class="link-btn link-live" title="Buka Visualisasi Alpro">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/RedMagic46/Project-UAS-Algoritma-Pemrograman" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" title="Source Code Alpro">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Source</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Vercel</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 6: Praktikum Pemrograman Mobile -->
+          <article class="glass-card project-card" data-category="mobile academic">
+            <div class="project-visual-header project-banner-mobile">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Mobile Development</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">TypeScript</span>
+                <span class="tag-badge">Mobile Apps</span>
+                <span class="tag-badge">Praktikum Sem 5</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/RedMagic46/Praktikum-Pemrograman-Mobile" target="_blank"
+                  rel="noopener noreferrer">Praktikum Pemrograman Mobile</a>
+              </h3>
+              <p class="project-desc">
+                Repositori terpusat modul dan aplikasi praktikum pemrograman mobile semester 5 Teknik Informatika UMM.
+                Meliputi navigasi screen, state management, dan fetch data API.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RedMagic46/Praktikum-Pemrograman-Mobile" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" title="Source Code Praktikum Mobile">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Buka Repositori</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Praktikum Aktif</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 7: Final Project Grafkom -->
+          <article class="glass-card project-card" data-category="academic">
+            <div class="project-visual-header project-banner-grafkom">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Computer Graphics</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">C++</span>
+                <span class="tag-badge">OpenGL</span>
+                <span class="tag-badge">3D Rendering</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/RedMagic46/Final-Project-Grafkom" target="_blank"
+                  rel="noopener noreferrer">Final Project Grafika Komputer 3D</a>
+              </h3>
+              <p class="project-desc">
+                Simulasi rendering dan pemrosesan objek grafika 3 dimensi menggunakan bahasa pemrograman C++.
+                Mengimplementasikan transformasi matriks, lighting, dan tekstur.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RedMagic46/Final-Project-Grafkom" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" title="Source Code Grafkom">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Buka Repositori</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Selesai</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Proyek 8: Presensi Cihuy -->
+          <article class="glass-card project-card" data-category="academic">
+            <div class="project-visual-header project-banner-presensi">
+              <div class="project-mockup-pattern"></div>
+              <span class="project-badge-type">Automation</span>
+              <svg class="project-preview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-badge">Python</span>
+                <span class="tag-badge">Automation Script</span>
+                <span class="tag-badge">CLI Bot</span>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/RedMagic46/presensi-cihuy" target="_blank"
+                  rel="noopener noreferrer">Presensi Cihuy - Attendance Tool</a>
+              </h3>
+              <p class="project-desc">
+                Skrip otomasi pencatatan presensi kehadiran perkuliahan berbasis Python. Membantu penjadwalan check-in
+                dan peringatan kehadiran otomatis.
+              </p>
+              <footer class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com/RedMagic46/presensi-cihuy" target="_blank" rel="noopener noreferrer"
+                    class="link-btn" title="Source Code Presensi Cihuy">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Buka Repositori</span>
+                  </a>
+                </div>
+                <span class="status-indicator"><span class="status-dot"></span> Otomasi</span>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         EDUCATION & TIMELINE SECTION (PENDIDIKAN & PENGALAMAN)
+         ----------------------------------------------------------------------- -->
+    <section id="pendidikan" class="section-wrapper education-section" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Riwayat & Perjalanan</span>
+          <h2 id="education-title" class="section-title">Pendidikan & Akademik</h2>
+          <p class="section-subtitle">Rekam jejak studi formal dan pengalaman pembelajaran di bidang Teknik Informatika.
+          </p>
+        </header>
+
+        <div class="timeline-wrap">
+          <!-- Timeline Item 1: Kuliah S1 UMM -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-content-card">
+              <time class="timeline-badge-date" datetime="2022">2022 - Sekarang (Semester 5)</time>
+              <h3 class="timeline-title">S1 Teknik Informatika</h3>
+              <p class="timeline-institution">Universitas Muhammadiyah Malang (UMM)</p>
+              <p class="timeline-desc">
+                Mempelajari disiplin ilmu informatika mencakup rekayasa perangkat lunak, pemrograman web dan mobile,
+                arsitektur basis data, serta kecerdasan buatan. Aktif menyelesaikan berbagai praktikum berbasis proyek
+                nyata.
+              </p>
+              <div class="coursework-pills" aria-label="Mata Kuliah Utama">
+                <span class="course-pill">Pemrograman Web</span>
+                <span class="course-pill">Pemrograman Mobile</span>
+                <span class="course-pill">Pemrograman Berorientasi Objek (PBO)</span>
+                <span class="course-pill">Pemrograman Lanjut</span>
+                <span class="course-pill">Interaksi Manusia & Komputer (IMKB)</span>
+                <span class="course-pill">Grafika Komputer</span>
+                <span class="course-pill">Algoritma & Struktur Data</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2: Pengalaman Proyek Praktikum -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-content-card">
+              <time class="timeline-badge-date" datetime="2023">2023 - 2024</time>
+              <h3 class="timeline-title">Kolaborasi Proyek Perangkat Lunak Mahasiswa</h3>
+              <p class="timeline-institution">Laboratorium Informatika UMM</p>
+              <p class="timeline-desc">
+                Berpartisipasi dalam perancangan produk digital berbasis tim di lingkungan kampus: pengembangan aplikasi
+                Verikost, website pendeteksi kesehatan mental MindCare, serta platform digitalisasi katalog UMKM.
+              </p>
+              <div class="coursework-pills" aria-label="Fokus Pengalaman">
+                <span class="course-pill">Git Collaboration</span>
+                <span class="course-pill">Fullstack Prototyping</span>
+                <span class="course-pill">UI/UX Testing</span>
+                <span class="course-pill">Code Reviews</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3: Pendidikan Menengah Atas -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-content-card">
+              <time class="timeline-badge-date" datetime="2019/2022">2019 - 2022</time>
+              <h3 class="timeline-title">Sekolah Menengah Atas (MIPA)</h3>
+              <p class="timeline-institution">Jurusan Matematika dan Ilmu Pengetahuan Alam</p>
+              <p class="timeline-desc">
+                Membangun pondasi logika matematika, analisis sistematis, dan computational thinking awal sebelum
+                melanjutkan ke jenjang perguruan tinggi ilmu komputer.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         CONTACT SECTION (HUBUNGI SAYA)
+         ----------------------------------------------------------------------- -->
+    <section id="kontak" class="section-wrapper contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Komunikasi & Kolaborasi</span>
+          <h2 id="contact-title" class="section-title">Mari Terhubung & Berdiskusi</h2>
+          <p class="section-subtitle">Punya proyek menarik, pertanyaan seputar perkuliahan, atau ingin berkolaborasi?
+            Kirimkan pesan Anda!</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Kolom Saluran Kontak & Media Sosial -->
+          <div class="contact-info-wrap">
+            <p class="contact-card-lead">
+              Saya selalu terbuka untuk berdiskusi seputar peluang proyek pengembangan perangkat lunak, riset web,
+              maupun kolaborasi open-source.
+            </p>
+
+            <address class="contact-channels" style="font-style: normal;">
+              <!-- GitHub Info -->
+              <a href="https://github.com/RedMagic46" target="_blank" rel="noopener noreferrer"
+                class="contact-channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">GitHub Repository</span>
+                  <span class="channel-value">github.com/RedMagic46</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Info -->
+              <a href="https://linkedin.com/in/naufal-muammar-764056328" target="_blank" rel="noopener noreferrer"
+                class="contact-channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">LinkedIn Profile</span>
+                  <span class="channel-value">Naufal Muammar</span>
+                </div>
+              </a>
+
+              <!-- Instagram Info -->
+              <a href="https://instagram.com/ufalnaaa" target="_blank" rel="noopener noreferrer"
+                class="contact-channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">Instagram</span>
+                  <span class="channel-value">@ufalnaaa</span>
+                </div>
+              </a>
+
+              <!-- Domisili Info -->
+              <div class="contact-channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">Domisili Kampus</span>
+                  <span class="channel-value">Malang, Jawa Timur, ID</span>
+                </div>
+              </div>
+            </address>
+          </div>
+
+          <!-- Kolom Formulir Kontak Interaktif -->
+          <article class="glass-card contact-form-card">
+            <h3 class="form-title">Kirimkan Pesan Langsung</h3>
+            <p class="form-subtitle">Formulir validasi standar HTML5 semantik murni.</p>
+
+            <form id="contactForm" action="#" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Nama Lengkap <span
+                      style="color: var(--accent);">*</span></label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="Masukkan nama Anda"
+                    required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Alamat Email <span
+                      style="color: var(--accent);">*</span></label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="nama@email.com"
+                    required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectField" class="form-label">Subjek / Topik <span
+                    style="color: var(--accent);">*</span></label>
+                <input type="text" id="subjectField" name="subject" class="form-input"
+                  placeholder="Contoh: Tawaran Kolaborasi Web / Proyek Kuliah" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageField" class="form-label">Isi Pesan <span
+                    style="color: var(--accent);">*</span></label>
+                <textarea id="messageField" name="message" class="form-textarea"
+                  placeholder="Tuliskan pesan lengkap Anda di sini..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Kirim Pesan Sekarang</span>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Kembali ke atas">
+            <span class="logo-icon" aria-hidden="true">NM</span>
+            <span class="logo-text">Naufal Muammar</span>
+          </a>
+          <p class="footer-tagline">Mahasiswa Teknik Informatika • Universitas Muhammadiyah Malang</p>
+        </div>
+
+        <nav aria-label="Navigasi Footer">
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Beranda</a></li>
+            <li><a href="#tentang" class="footer-link">Tentang</a></li>
+            <li><a href="#keahlian" class="footer-link">Keahlian</a></li>
+            <li><a href="#proyek" class="footer-link">Proyek</a></li>
+            <li><a href="#pendidikan" class="footer-link">Pendidikan</a></li>
+            <li><a href="#kontak" class="footer-link">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <p>&copy; <span id="currentYear">2026</span> <strong>Naufal Muammar</strong> (RedMagic46). Seluruh hak cipta
+            dilindungi.</p>
+        </div>
+
+        <div>
+          <a href="#hero" class="back-to-top-btn" aria-label="Kembali ke bagian atas halaman">
+            <span>Ke Atas</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
